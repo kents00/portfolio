@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
   --dl-color-gray-500: #595959;
   --dl-color-gray-700: #999999;
@@ -93,6 +94,8 @@
   text-decoration: none;
 }
 
+=======
+>>>>>>> 94e47ff17bc565dfe6bd845faa3c9782413fb3dd
 .navigation-links-nav {
   flex: 0 0 auto;
   display: flex;
@@ -106,6 +109,16 @@
   margin-left: var(--dl-space-space-twounits);
 }
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+>>>>>>> 94e47ff17bc565dfe6bd845faa3c9782413fb3dd
 @media(max-width: 767px) {
   .navigation-links-nav {
     align-items: flex-start;
@@ -822,4 +835,8 @@
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-unit);
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 94e47ff17bc565dfe6bd845faa3c9782413fb3dd

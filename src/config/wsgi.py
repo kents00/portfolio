@@ -19,7 +19,10 @@ middleware here, or combine a Django application with an application of another
 framework.
 """
 import os
+<<<<<<< HEAD
 from django.core.wsgi import get_wsgi_application
+=======
+>>>>>>> 94e47ff17bc565dfe6bd845faa3c9782413fb3dd
 #import sys
 #import site
 #import subprocess
