@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 :root {
   --dl-color-gray-500: #595959;
   --dl-color-gray-700: #999999;
@@ -94,8 +93,6 @@
   text-decoration: none;
 }
 
-=======
->>>>>>> 94e47ff17bc565dfe6bd845faa3c9782413fb3dd
 .navigation-links-nav {
   flex: 0 0 auto;
   display: flex;
@@ -109,16 +106,6 @@
   margin-left: var(--dl-space-space-twounits);
 }
 
-<<<<<<< HEAD
-=======
-
-
-
-
-
-
-
->>>>>>> 94e47ff17bc565dfe6bd845faa3c9782413fb3dd
 @media(max-width: 767px) {
   .navigation-links-nav {
     align-items: flex-start;
@@ -835,8 +822,86 @@
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-unit);
   }
-<<<<<<< HEAD
 }
-=======
+
+/* Box sizing */
+* {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
 }
->>>>>>> 94e47ff17bc565dfe6bd845faa3c9782413fb3dd
+
+/* Typography and spacing reset */
+p, li, ul, pre, div, h1, h2, h3, h4, h5, h6, figure, blockquote, figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body and margins reset */
+body {
+  margin: 0;
+  font-weight: 400;
+  font-style:normal;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: normal;
+  line-height: 1.15;
+  color: var(--dl-color-gray-black);
+  background-color: var(--dl-color-gray-white);
+}
+
+/* Button reset */
+button {
+  background-color: transparent;
+  text-transform: none;
+  -webkit-appearance: button;
+  border-style: none;
+  padding: 0;
+}
+
+/* Form element reset */
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+/* Additional styles */
+button, select {
+  text-transform: none;
+}
+
+/* Focus styles */
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focus, [type="button"]:-moz-focus, [type="reset"]:-moz-focus, [type="submit"]:-moz-focus {
+  outline: 1px dotted ButtonText;
+}
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* Input styles */
+input {
+  padding: 2px 4px;
+}
+
+/* Image styles */
+img {
+  display: block;
+}
+
+/* HTML specific styles */
+html {
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 1.15;
+  scroll-behavior: smooth;
+}

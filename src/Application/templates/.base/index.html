@@ -3,387 +3,57 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Scientific Jagged Armadillo</title>
+    <title>Portfolio | Kent Edoloverio</title>
+
     <meta property="og:title" content="Scientific Jagged Armadillo" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
 
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Inter;
-        font-size: 16px;
-      }
-
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-gray-black);
-        background-color: var(--dl-color-gray-white);
-
-      }
-    </style>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
       data-tag="font"
     />
-    <link rel="stylesheet" href="./style.css" />
+
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'css/style.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/index.css'%}"/>
+    {% endcompress %}
   </head>
+
+
   <body>
     <div>
-      <link href="./index.css" rel="stylesheet" />
-
       <div class="home-container">
-        <header data-role="Header" class="home-header">
-          <img
-            alt="logo"
-            src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
-            class="home-image"
-          />
-          <div class="home-nav">
-            <nav
-              class="navigation-links-nav navigation-links-root-class-name17"
-            >
-              <span class="navigation-links-text"><span>Home</span></span>
-              <span class="navigation-links-text1"><span>About</span></span>
-              <span class="navigation-links-text2"><span>Contact</span></span>
-            </nav>
-          </div>
-          <div data-role="BurgerMenu" class="home-burger-menu">
-            <svg viewBox="0 0 1024 1024" class="home-icon">
-              <path
-                d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-              ></path>
-            </svg>
-          </div>
-          <div data-role="MobileMenu" class="home-mobile-menu">
-            <div class="home-nav1">
-              <div class="home-container1">
-                <img
-                  alt="image"
-                  src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
-                  class="home-image1"
-                />
-                <div data-role="CloseMobileMenu" class="home-close-mobile-menu">
-                  <svg viewBox="0 0 1024 1024" class="home-icon02">
-                    <path
-                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-              <nav
-                class="navigation-links-nav navigation-links-root-class-name18"
-              >
-                <span class="navigation-links-text"><span>Home</span></span>
-                <span class="navigation-links-text1"><span>About</span></span>
-                <span class="navigation-links-text2"><span>Contact</span></span>
-              </nav>
-            </div>
-            <div>
-              <svg viewBox="0 0 950.8571428571428 1024" class="home-icon04">
-                <path
-                  d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
-                ></path></svg
-              ><svg viewBox="0 0 877.7142857142857 1024" class="home-icon06">
-                <path
-                  d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
-                ></path></svg
-              ><svg viewBox="0 0 602.2582857142856 1024" class="home-icon08">
-                <path
-                  d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
-                ></path>
-              </svg>
-            </div>
-          </div>
-        </header>
-        <div id="About" class="home-hero">
-          <div class="home-container2">
-            <span class="home-text">Hey, I'm</span>
-            <h1 class="home-text01">KENT JOHN EDOLOVERIO</h1>
-            <h1 class="home-text02">Backend Developer</h1>
-            <span class="home-text03">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              elementum metus at mi sagittis scelerisque ut sit amet ipsum.
-              Phasellus consequat sapien nulla, at commodo ante tincidunt nec.
-              Quisque mattis tortor sit amet eros laoreet, nec rutrum diam
-              fermentum. Aliquam scelerisque ut neque ut viverra. Sed fringilla
-              aliquam mollis. Nunc vulputate venenatis mattis.
-            </span>
-            <div class="home-btn-group">
-              <button class="home-button button">Contact Me</button>
-            </div>
-          </div>
-          <img
-            src="https://play.teleporthq.io/static/svg/default-img.svg"
-            class="home-image2"
-          />
-        </div>
-        <div class="home-work-experience">
-          <h1 class="home-text04">
-            <span>WORK EXPERIENCE</span>
-            <br />
-          </h1>
-          <div class="home-container3">
-            <div
-              class="work-experience-blog-post-card work-experience-root-class-name1"
-            >
-              <img
-                alt="image"
-                src="https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fHdvcmtpbmclMjBkZXNrfGVufDB8fHx8MTYyNjI1MDYwMg&amp;ixlib=rb-1.2.1&amp;h=1200"
-                class="work-experience-image"
-              />
-              <div class="work-experience-container">
-                <span class="work-experience-text">
-                  <span>COMPANY NAME</span>
-                </span>
-                <h1 class="work-experience-text1"><span>ROLE</span></h1>
-                <div class="work-experience-container1">
-                  <span class="work-experience-text2">
-                    <span>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Aliquam elementum metus at mi sagittis scelerisque ut sit
-                      amet ipsum. Phasellus consequat sapien nulla, at commodo
-                      ante tincidunt nec. Quisque mattis tortor sit amet eros
-                      laoreet, nec rutrum diam fermentum. Aliquam scelerisque ut
-                      neque ut viverra. Sed fringilla aliquam mollis. Nunc
-                      vulputate venenatis mattis.
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="home-container4">
-            <div
-              class="work-experience-blog-post-card work-experience-root-class-name2"
-            >
-              <img
-                alt="image"
-                src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDl8fHdvcmt8ZW58MHx8fHwxNjI2NDUwNzky&amp;ixlib=rb-1.2.1&amp;h=1000"
-                class="work-experience-image"
-              />
-              <div class="work-experience-container">
-                <span class="work-experience-text">
-                  <span>COMPANY NAME</span>
-                </span>
-                <h1 class="work-experience-text1"><span>ROLE</span></h1>
-                <div class="work-experience-container1">
-                  <span class="work-experience-text2">
-                    <span>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Aliquam elementum metus at mi sagittis scelerisque ut sit
-                      amet ipsum. Phasellus consequat sapien nulla, at commodo
-                      ante tincidunt nec. Quisque mattis tortor sit amet eros
-                      laoreet, nec rutrum diam fermentum. Aliquam scelerisque ut
-                      neque ut viverra. Sed fringilla aliquam mollis. Nunc
-                      vulputate venenatis mattis.
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="work-experience-blog-post-card work-experience-root-class-name"
-          >
-            <img
-              alt="image"
-              src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDExfHx3b3JrJTIwb2ZmaWNlfGVufDB8fHx8MTYyNjQ1MDgzMQ&amp;ixlib=rb-1.2.1&amp;h=1000"
-              class="work-experience-image"
-            />
-            <div class="work-experience-container">
-              <span class="work-experience-text">
-                <span>COMPANY NAME</span>
-              </span>
-              <h1 class="work-experience-text1"><span>ROLE</span></h1>
-              <div class="work-experience-container1">
-                <span class="work-experience-text2">
-                  <span>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aliquam elementum metus at mi sagittis scelerisque ut sit
-                    amet ipsum. Phasellus consequat sapien nulla, at commodo
-                    ante tincidunt nec. Quisque mattis tortor sit amet eros
-                    laoreet, nec rutrum diam fermentum. Aliquam scelerisque ut
-                    neque ut viverra. Sed fringilla aliquam mollis. Nunc
-                    vulputate venenatis mattis.
-                  </span>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="home-banner">
-          <h1 class="home-text07">
-            I'm currently seeking an opportunity to be part of a team
-          </h1>
-          <span class="home-text08">
-            <br />
-            <span>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              elementum metus at mi sagittis scelerisque ut sit amet ipsum.
-              Phasellus consequat sapien nulla, at commodo ante tincidunt nec.
-              Quisque mattis tortor sit amet eros laoreet, nec rutrum diam
-              fermentum. Aliquam scelerisque ut neque ut viverra. Sed fringilla
-              aliquam mollis. Nunc vulputate venenatis mattis.
-            </span>
-            <span></span>
-            <span></span>
-          </span>
-          <div class="home-icon-group1">
-            <svg viewBox="0 0 877.7142857142857 1024" class="home-icon10">
-              <path
-                d="M438.857 73.143c242.286 0 438.857 196.571 438.857 438.857 0 193.714-125.714 358.286-300 416.571-22.286 4-30.286-9.714-30.286-21.143 0-14.286 0.571-61.714 0.571-120.571 0-41.143-13.714-67.429-29.714-81.143 97.714-10.857 200.571-48 200.571-216.571 0-48-17.143-86.857-45.143-117.714 4.571-11.429 19.429-56-4.571-116.571-36.571-11.429-120.571 45.143-120.571 45.143-34.857-9.714-72.571-14.857-109.714-14.857s-74.857 5.143-109.714 14.857c0 0-84-56.571-120.571-45.143-24 60.571-9.143 105.143-4.571 116.571-28 30.857-45.143 69.714-45.143 117.714 0 168 102.286 205.714 200 216.571-12.571 11.429-24 30.857-28 58.857-25.143 11.429-89.143 30.857-127.429-36.571-24-41.714-67.429-45.143-67.429-45.143-42.857-0.571-2.857 26.857-2.857 26.857 28.571 13.143 48.571 64 48.571 64 25.714 78.286 148 52 148 52 0 36.571 0.571 70.857 0.571 81.714 0 11.429-8 25.143-30.286 21.143-174.286-58.286-300-222.857-300-416.571 0-242.286 196.571-438.857 438.857-438.857zM166.286 703.429c1.143-2.286-0.571-5.143-4-6.857-3.429-1.143-6.286-0.571-7.429 1.143-1.143 2.286 0.571 5.143 4 6.857 2.857 1.714 6.286 1.143 7.429-1.143zM184 722.857c2.286-1.714 1.714-5.714-1.143-9.143-2.857-2.857-6.857-4-9.143-1.714-2.286 1.714-1.714 5.714 1.143 9.143 2.857 2.857 6.857 4 9.143 1.714zM201.143 748.571c2.857-2.286 2.857-6.857 0-10.857-2.286-4-6.857-5.714-9.714-3.429-2.857 1.714-2.857 6.286 0 10.286s7.429 5.714 9.714 4zM225.143 772.571c2.286-2.286 1.143-7.429-2.286-10.857-4-4-9.143-4.571-11.429-1.714-2.857 2.286-1.714 7.429 2.286 10.857 4 4 9.143 4.571 11.429 1.714zM257.714 786.857c1.143-3.429-2.286-7.429-7.429-9.143-4.571-1.143-9.714 0.571-10.857 4s2.286 7.429 7.429 8.571c4.571 1.714 9.714 0 10.857-3.429zM293.714 789.714c0-4-4.571-6.857-9.714-6.286-5.143 0-9.143 2.857-9.143 6.286 0 4 4 6.857 9.714 6.286 5.143 0 9.143-2.857 9.143-6.286zM326.857 784c-0.571-3.429-5.143-5.714-10.286-5.143-5.143 1.143-8.571 4.571-8 8.571 0.571 3.429 5.143 5.714 10.286 4.571s8.571-4.571 8-8z"
-              ></path></svg
-            ><svg viewBox="0 0 877.7142857142857 1024" class="home-icon12">
-              <path
-                d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
-              ></path></svg
-            ><svg viewBox="0 0 602.2582857142856 1024" class="home-icon14">
-              <path
-                d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
-              ></path>
-            </svg>
-          </div>
-        </div>
-        <div id="Projects" class="home-projects">
-          <h1 class="home-text13">
-            <span>FEATURED PROJECTS</span>
-            <br />
-          </h1>
-          <div class="home-container5">
-            <div class="projects-blog-post-card projects-root-class-name3">
-              <img
-                alt="image"
-                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;w=1000"
-                image_src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;h=1000"
-                class="projects-image"
-              />
-              <div class="projects-container">
-                <div class="projects-container1">
-                  <span class="projects-text"><span>3 days ago</span></span>
-                </div>
-                <h1 class="projects-text1">
-                  <span>Lorem ipsum dolor sit amet</span>
-                </h1>
-                <span class="projects-text2">
-                  <span>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    non volutpat turpis. Mauris luctus rutrum mi ut rhoncus.
-                    Integer in dignissim tortor. Lorem ipsum dolor sit amet,
-                    consectetur adipiscing ...
-                  </span>
-                </span>
-                <div class="projects-container2">
-                  <span class="projects-text3">Read More -&gt;</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="home-container6">
-            <div class="projects-blog-post-card projects-root-class-name">
-              <img
-                alt="image"
-                src="https://images.unsplash.com/photo-1595565312451-23051ab0666c?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDI0fHxwb3J0cmFpdCUyMHdvbWFufGVufDB8fHx8MTYyNjQ1MDU4MQ&amp;ixlib=rb-1.2.1&amp;h=1000"
-                image_src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;h=1000"
-                class="projects-image"
-              />
-              <div class="projects-container">
-                <div class="projects-container1">
-                  <span class="projects-text"><span>3 days ago</span></span>
-                </div>
-                <h1 class="projects-text1">
-                  <span>Lorem ipsum dolor sit amet</span>
-                </h1>
-                <span class="projects-text2">
-                  <span>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    non volutpat turpis. Mauris luctus rutrum mi ut rhoncus.
-                    Integer in dignissim tortor. Lorem ipsum dolor sit amet,
-                    consectetur adipiscing ...
-                  </span>
-                </span>
-                <div class="projects-container2">
-                  <span class="projects-text3">Read More -&gt;</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="projects-blog-post-card projects-root-class-name2">
-            <img
-              alt="image"
-              src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIxfHxwb3J0cmFpdCUyMHdvbWFuJTIwY29sb3J8ZW58MHx8fHwxNjI2NDUwNTU4&amp;ixlib=rb-1.2.1&amp;h=1000"
-              image_src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;h=1000"
-              class="projects-image"
-            />
-            <div class="projects-container">
-              <div class="projects-container1">
-                <span class="projects-text"><span>3 days ago</span></span>
-              </div>
-              <h1 class="projects-text1">
-                <span>Lorem ipsum dolor sit amet</span>
-              </h1>
-              <span class="projects-text2">
-                <span>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  non volutpat turpis. Mauris luctus rutrum mi ut rhoncus.
-                  Integer in dignissim tortor. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing ...
-                </span>
-              </span>
-              <div class="projects-container2">
-                <span class="projects-text3">Read More -&gt;</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="Contact" class="home-contact">
-          <h1 class="home-text16">Learn to keep it simple</h1>
-          <span class="home-text17">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            elementum metus at mi sagittis scelerisque ut sit amet ipsum.
-            Phasellus consequat sapien nulla, at commodo ante tincidunt nec.
-            Quisque mattis tortor sit amet eros laoreet, nec rutrum diam
-            fermentum. Aliquam scelerisque ut neque ut viverra. Sed fringilla
-            aliquam mollis.
-          </span>
-          <div class="home-container7">
-            <input
-              type="text"
-              placeholder="Email here..."
-              class="home-textinput input"
-            />
-            <button class="home-button1 button">Send Email</button>
-          </div>
-        </div>
-        <footer class="home-footer">
-          <span class="home-text18">
-            © 2023 Kent Edoloverio, All Rights Reserved.
-          </span>
-          <div class="home-icon-group2">
-            <svg viewBox="0 0 585.1428571428571 1024" class="home-icon16">
-              <path
-                d="M585.143 173.143l-173.143 332.571 13.714 17.714h159.429v237.143h-289.714l-25.143 17.143-81.143 156c-0.571 0-16 16-17.143 17.143h-172v-173.143l173.143-333.143-13.714-17.143h-159.429v-237.143h289.714l25.143-17.143 81.143-156c0.571 0 16-16 17.143-17.143h172v173.143z"
-              ></path></svg
-            ><svg viewBox="0 0 877.7142857142857 1024" class="home-icon18">
-              <path
-                d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
-              ></path></svg
-            ><svg viewBox="0 0 602.2582857142856 1024" class="home-icon20">
-              <path
-                d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
-              ></path>
-            </svg>
-          </div>
-        </footer>
+
+        {% include ".layout/header.html" %}
+        {% block header_block %}
+        {% endblock %}
+
+        {% include ".layout/about.html" %}
+        {% block about %}
+        {% endblock %}
+
+        {% include ".layout/work_experience.html" %}
+        {% block work_experience %}
+        {% endblock %}
+
+        {% include ".layout/banner.html" %}
+        {% block banner %}
+        {% endblock %}
+
+        {% include ".layout/projects.html" %}
+        {% block projects %}
+        {% endblock %}
+
+        {% include ".layout/contact.html" %}
+        {% block contact %}
+        {% endblock %}
+
+        {% include ".layout/footer.html" %}
+        {% block footer %}
+        {% endblock %}
       </div>
     </div>
   </body>
