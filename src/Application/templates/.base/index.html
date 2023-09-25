@@ -17,7 +17,6 @@
     />
 
     {% compress css %}
-    <link rel="stylesheet" href="{% static 'css/style.css'%}" />
     <link rel="stylesheet" href="{% static 'css/index.css'%}"/>
     {% endcompress %}
   </head>
@@ -27,31 +26,27 @@
     <div>
       <div class="home-container">
 
-        {% include ".layout/header.html" %}
-        {% block header_block %}
-        {% endblock %}
-
-        {% include ".layout/about.html" %}
+        {% include "layout/about.html" %}
         {% block about %}
         {% endblock %}
 
-        {% include ".layout/work_experience.html" %}
+        {% include "layout/work_experience.html" %}
         {% block work_experience %}
         {% endblock %}
 
-        {% include ".layout/banner.html" %}
+        {% include "layout/banner.html" %}
         {% block banner %}
         {% endblock %}
 
-        {% include ".layout/projects.html" %}
+        {% include "layout/projects.html" %}
         {% block projects %}
         {% endblock %}
 
-        {% include ".layout/contact.html" %}
+        {% include "layout/contact.html" %}
         {% block contact %}
         {% endblock %}
 
-        {% include ".layout/footer.html" %}
+        {% include "layout/footer.html" %}
         {% block footer %}
         {% endblock %}
       </div>
