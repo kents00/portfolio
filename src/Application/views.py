@@ -4,4 +4,4 @@ from django.http import request
 # Create your views here.
 
 def Menu(request):
-    return render(request, 'layout/main.html')
+    return render(request, '.base/index.html')
