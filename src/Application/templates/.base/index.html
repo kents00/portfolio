@@ -26,6 +26,10 @@
     <div>
       <div class="home-container">
 
+        {% include "layout/header.html" %}
+        {% block header_block %}
+        {% endblock %}
+
         {% include "layout/about.html" %}
         {% block about %}
         {% endblock %}
