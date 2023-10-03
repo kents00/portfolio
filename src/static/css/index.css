@@ -344,6 +344,7 @@ img {
 }
 .projects-text1 {
   margin-bottom: var(--dl-space-space-twounits);
+  margin-top: var(--dl-space-space-twounits);
 }
 .projects-text2 {
   color: var(--dl-color-gray-500);
