@@ -4,7 +4,7 @@ import environ
 from pathlib import Path
 
 
-SUPPORTED_NONLOCALES = ['media', 'admin', 'static', 'media']
+SUPPORTED_NONLOCALES = ['media', 'admin', 'static']
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__) + "../../../")

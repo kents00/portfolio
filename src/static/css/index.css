@@ -380,6 +380,10 @@ img {
   }
 }
 @media(max-width: 360px) {
+  .home-text17 {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   .projects-text {
     top: -8px;
     right: -15px;
