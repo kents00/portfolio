@@ -4,7 +4,7 @@ import environ
 from pathlib import Path
 
 
-SUPPORTED_NONLOCALES = ['media', 'admin', 'static']
+SUPPORTED_NONLOCALES = ['media', 'admin', 'static', 'media']
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__) + "../../../")
@@ -18,10 +18,6 @@ env = environ.Env(
     # set casting, default value
     DEBUG=(bool, True)
 )
-
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
-PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__) + "../../../")
-
 
 # Take environment variables from .env file
 environ.Env.read_env(os.path.join(PROJECT_ROOT, '.env'))
@@ -40,7 +36,7 @@ ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
 # Application definition
 
 INSTALLED_APPS = [
-    #Django default apps
+    # Django default apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -48,15 +44,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    #Third party apps
+    # Third party apps
     'compressor',
     'django_nose',
     'django_extensions',
     'debug_toolbar',
 
-    #Local apps
+    # Local apps
 
-    #Application base
+    # Application base
     'Application',
 ]
 
@@ -115,7 +111,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
 
                 # Custom context processors here
-                #'config.context_processors.custom_context_processor',
+                # 'config.context_processors.custom_context_processor',
 
             ],
         },
@@ -176,7 +172,7 @@ SESSION_COOKIE_HTTPONLY = True
 SESSION_COOKIE_SECURE = False
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
-MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'media')
+MEDIA_ROOT = 'media/'
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 MEDIA_URL = '/media/'
@@ -192,13 +188,12 @@ STATICFILES_DIRS = [
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-
 ]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Memorycached
-SESSIONS_ENGINE='django.contrib.sessions.backends.cache'
+SESSIONS_ENGINE = 'django.contrib.sessions.backends.cache'
 
 CACHES = {
     'default': {
@@ -233,4 +228,3 @@ STATICFILES_FINDERS = (
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 
 INTERNAL_IPS = ['127.0.0.1']
-

@@ -36,5 +36,5 @@ urlpatterns = [
 if settings.DEBUG:
     # static files (images, css, javascript, etc.)
     urlpatterns += [ url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT})]
-    urlpatterns += [ url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.STATIC_ROOT})]
-    urlpatterns += [ url(r'^__debug__/', include(debug_toolbar.urls)),]
+    urlpatterns += [ url(r'^static/(?P<path>.*)$', serve, {'document_root': settings.STATIC_ROOT})]
+    urlpatterns += [ url(r'^__debug__/', include(debug_toolbar.urls))]
