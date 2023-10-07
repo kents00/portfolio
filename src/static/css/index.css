@@ -542,6 +542,7 @@ img {
   background-color: var(--dl-color-gray-black);
 }
 .home-image2 {
+  height: 400px;
   width: 400px;
   object-fit: cover;
 }

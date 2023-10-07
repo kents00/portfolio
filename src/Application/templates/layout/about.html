@@ -1,3 +1,4 @@
+{% load static %}
 {% block about %}
 <div id="About" class="home-hero">
   <div class="home-container2">
@@ -5,19 +6,17 @@
     <h1 class="home-text01">KENT JOHN EDOLOVERIO</h1>
     <h1 class="home-text02">Backend Developer</h1>
     <span class="home-text03">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-      elementum metus at mi sagittis scelerisque ut sit amet ipsum.
-      Phasellus consequat sapien nulla, at commodo ante tincidunt nec.
-      Quisque mattis tortor sit amet eros laoreet, nec rutrum diam
-      fermentum. Aliquam scelerisque ut neque ut viverra. Sed fringilla
-      aliquam mollis. Nunc vulputate venenatis mattis.
+      I am currently pursuing a four-year Bachelor of Science degree in Information Technology at Mindanao University of
+      Science and Technology, located in Panaon, Philippines. Throughout the course of my studies, I have actively engaged
+      with open source projects on GitHub and gained valuable experience through my contributions. Building upon this hands-on
+      experience, I am eager to further expand my skills and knowledge in the field.
     </span>
     <div class="home-btn-group">
       <button class="home-button button">Contact Me</button>
     </div>
   </div>
   <img
-    src="https://play.teleporthq.io/static/svg/default-img.svg"
+    src="{% static 'images/kent-edoloverio.jpg' %}"
     class="home-image2"
   />
 </div>

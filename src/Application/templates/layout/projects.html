@@ -7,11 +7,14 @@
   {% for recent_project in personal_projects %}
   <div class="home-container5">
     <div class="projects-blog-post-card projects-root-class-name3">
-      <img alt="{{ recent_project.project_name }}" src="{{ recent_project.project_photo.url }}"
-        image_src="{{ recent_project.project_photo }}" class="projects-image" />
+      <img
+      alt="{{ recent_project.project_name }}"
+      src="{{ recent_project.project_photo.url }}"
+      image_src="{{ recent_project.project_photo.url }}"
+      class="projects-image" />
       <div class="projects-container">
         <div class="projects-container1">
-          <span class="projects-text"><span>{{ recent_project.publish }}</span></span>
+          <span class="projects-text"><span>{{ recent_project.publish|date:'Y-m-d' }}</span></span>
         </div>
         <h1 class="projects-text1">
           <span>{{ recent_project.project_name }}</span>
