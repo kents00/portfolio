@@ -1,39 +1,32 @@
 {% block projects %}
 <div id="Projects" class="home-projects">
-    <h1 class="home-text13">
-      <span>FEATURED PROJECTS</span>
-      <br />
-    </h1>
-    <div class="home-container5">
-      <div class="projects-blog-post-card projects-root-class-name3">
-        <img
-          alt="image"
-          src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;w=1000"
-          image_src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;h=1000"
-          class="projects-image"
-        />
-        <div class="projects-container">
-          <div class="projects-container1">
-            <span class="projects-text"><span>3 days ago</span></span>
-          </div>
-          <h1 class="projects-text1">
-            <span>Lorem ipsum dolor sit amet</span>
-          </h1>
-          <span class="projects-text2">
-            <span>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              non volutpat turpis. Mauris luctus rutrum mi ut rhoncus.
-              Integer in dignissim tortor. Lorem ipsum dolor sit amet,
-              consectetur adipiscing ...
-            </span>
+  <h1 class="home-text13">
+    <span>FEATURED PROJECTS</span>
+    <br />
+  </h1>
+  {% for recent_project in personal_projects %}
+  <div class="home-container5">
+    <div class="projects-blog-post-card projects-root-class-name3">
+      <img alt="{{ recent_project.project_name }}" src="{{ recent_project.project_photo.url }}"
+        image_src="{{ recent_project.project_photo }}" class="projects-image" />
+      <div class="projects-container">
+        <div class="projects-container1">
+          <span class="projects-text"><span>{{ recent_project.publish }}</span></span>
+        </div>
+        <h1 class="projects-text1">
+          <span>{{ recent_project.project_name }}</span>
+        </h1>
+        <span class="projects-text2">
+          <span>
+            {{ recent_project.description | truncatechars:200 }}
           </span>
-          <div class="projects-container2">
-            <span class="projects-text3">Read More -&gt;</span>
-          </div>
+        </span>
+        <div class="projects-container2">
+          <a href="{{ recent_project.link }}" class="projects-text3">Read More -&gt;</a>
         </div>
       </div>
     </div>
-      </div>
-    </div>
   </div>
+  {% endfor %}
+</div>
 {% endblock %}

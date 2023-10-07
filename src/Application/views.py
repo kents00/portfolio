@@ -1,16 +1,15 @@
 from django.shortcuts import render
-from django.http import request
 from .models import WorkExperience,FeaturedProject
 
 # Create your views here.
 
 def Menu(request):
-    projects = WorkExperience.objects.all()
-    work_experience = FeaturedProject.objects.all()
+    personal_projects = FeaturedProject.objects.all()
+    work_experiences = WorkExperience.objects.all()
 
     context = {
-        'projects':projects,
-        'work_experience' : work_experience,
+        'personal_projects': personal_projects,
+        'work_experiences' : work_experiences,
     }
 
     return render(request, '.base/index.html', context)

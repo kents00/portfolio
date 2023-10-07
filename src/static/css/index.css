@@ -380,10 +380,6 @@ img {
   }
 }
 @media(max-width: 360px) {
-  .home-text17 {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
   .projects-text {
     top: -8px;
     right: -15px;
@@ -822,10 +818,6 @@ img {
   .home-contact {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
-  }
-  .home-text17 {
-    padding-left: var(--dl-space-space-unit);
-    padding-right: var(--dl-space-space-unit);
   }
   .home-button1 {
     color: var(--dl-color-gray-white);

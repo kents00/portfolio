@@ -1,4 +1,6 @@
+from django.utils import timezone
 from django.db import models
+
 
 class WorkExperience(models.Model):
     company_photo = models.ImageField(upload_to='media')
@@ -7,13 +9,15 @@ class WorkExperience(models.Model):
     description = models.TextField()
 
     def __str__(self):
-        return self.company_name
+        return f"Company: {self.company_name}, Role: {self.role}"
+
 
 class FeaturedProject(models.Model):
     project_photo = models.ImageField(upload_to='media')
     project_name = models.CharField(max_length=255)
     description = models.TextField()
-    date = models.DateField()
+    link = models.TextField(max_length=1000)
+    publish = models.DateTimeField(default=timezone.now().strftime('%Y-%m-%d'))
 
     def __str__(self):
-        return self.project_name
+        return f"Project: {self.project_name}, Publish Date: {self.publish}"

@@ -4,6 +4,7 @@
       <span>WORK EXPERIENCE</span>
       <br />
     </h1>
+    {% for work in work_experiences %}
     <div class="home-container3">
       <div
         class="work-experience-blog-post-card work-experience-root-class-name1"
@@ -15,24 +16,19 @@
         />
         <div class="work-experience-container">
           <span class="work-experience-text">
-            <span>COMPANY NAME</span>
+            <span>{{ work.company_name }}</span>
           </span>
-          <h1 class="work-experience-text1"><span>ROLE</span></h1>
+          <h1 class="work-experience-text1"><span>{{ work.role }}</span></h1>
           <div class="work-experience-container1">
             <span class="work-experience-text2">
               <span>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Aliquam elementum metus at mi sagittis scelerisque ut sit
-                amet ipsum. Phasellus consequat sapien nulla, at commodo
-                ante tincidunt nec. Quisque mattis tortor sit amet eros
-                laoreet, nec rutrum diam fermentum. Aliquam scelerisque ut
-                neque ut viverra. Sed fringilla aliquam mollis. Nunc
-                vulputate venenatis mattis.
+                {{ work.description }}
               </span>
             </span>
           </div>
         </div>
       </div>
     </div>
+    {% endfor %}
   </div>
 {% endblock %}
