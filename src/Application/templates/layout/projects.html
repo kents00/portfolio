@@ -17,11 +17,11 @@
           <span class="projects-text"><span>{{ recent_project.publish|date:'Y-m-d' }}</span></span>
         </div>
         <h1 class="projects-text1">
-          <span>{{ recent_project.project_name }}</span>
+          <a href="{{ recent_project.link }}">{{ recent_project.project_name }}</a>
         </h1>
         <span class="projects-text2">
           <span>
-            {{ recent_project.description | truncatechars:200 }}
+            {{ recent_project.description | truncatechars:300 }}
           </span>
         </span>
         <div class="projects-container2">

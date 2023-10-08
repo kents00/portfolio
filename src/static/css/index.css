@@ -229,6 +229,7 @@ img {
   justify-content: center;
 }
 .work-experience-image {
+  height: 500px;
   width: 500px;
   object-fit: cover;
 }
@@ -542,7 +543,6 @@ img {
   background-color: var(--dl-color-gray-black);
 }
 .home-image2 {
-  height: 400px;
   width: 400px;
   object-fit: cover;
 }
@@ -583,10 +583,11 @@ img {
   justify-content: space-between;
 }
 .home-text07 {
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
 }
 .home-text08 {
+  font-size: 30px;
   max-width: var(--dl-size-size-maxwidth);
   margin-top: var(--dl-space-space-twounits);
   text-align: center;
@@ -808,7 +809,6 @@ img {
     font-size: 3rem;
   }
   .home-text08 {
-    font-size: 20px;
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
   }

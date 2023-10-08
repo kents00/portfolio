@@ -20,4 +20,4 @@ class FeaturedProject(models.Model):
     publish = models.DateField(default=timezone.now().strftime('%Y-%m-%d'))
 
     def __str__(self):
-        return f"Project: {self.project_name}, Publish Date: {self.publish}"
+        return f"Project: {self.project_name}, Publish Date: {self.publish  }"
