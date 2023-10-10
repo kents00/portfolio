@@ -11,7 +11,6 @@ class WorkExperience(models.Model):
     def __str__(self):
         return f"Company: {self.company_name}, Role: {self.role}"
 
-
 class FeaturedProject(models.Model):
     project_photo = models.ImageField(upload_to='media')
     project_name = models.CharField(max_length=255)
@@ -21,3 +20,9 @@ class FeaturedProject(models.Model):
 
     def __str__(self):
         return f"Project: {self.project_name}, Publish Date: {self.publish  }"
+
+class Contact(models.Model):
+    email = models.EmailField()
+
+    def __str__(self):
+        return f"Wants to contact you: {self.email}"

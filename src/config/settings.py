@@ -175,7 +175,7 @@ SESSION_COOKIE_SECURE = False
 MEDIA_ROOT = 'media/'
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
-MEDIA_URL = '/media/'
+MEDIA_URL = 'media/'
 
 # Absolute path to the directory static files should be collected to.
 STATIC_ROOT = 'static/'
@@ -228,3 +228,12 @@ STATICFILES_FINDERS = (
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 
 INTERNAL_IPS = ['127.0.0.1']
+
+# SMTP send main
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'kentedoloverio24.gmail.com'
+EMAIL_USE_TLS = False
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True
+EMAIL_HOST_USER = 'kentedoloverio@gmail.com'
+EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
