@@ -8,6 +8,7 @@
       to the possibility of assisting you further and providing valuable insights tailored specifically for your needs.
     </span>
     <div class="home-container7">
+      {% csrf_token %}
       <form id="contactform" method="post" action="{% url 'contact' %}">
         <input type="email" id="email" name="email" placeholder="Email here..."class="home-textinput input"/>
         <button type="submit" class="home-button1 button">Send Email</button>

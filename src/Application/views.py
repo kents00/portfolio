@@ -28,6 +28,6 @@ def send_mail(request):
            recipient_list = [request.POST.get("email")]
            message = f'You have a new contact submission from: {request.POST.get("email")}'
            EmailMessage(subject, message, email_from, recipient_list, connection=connection).send()
-           return HttpResponseRedirect('')
+           return HttpResponseRedirect('.base/index.html')
     else:
            return render(request, '.base/index.html')
