@@ -3,6 +3,9 @@ from django.http import HttpResponseRedirect
 from .models import WorkExperience,FeaturedProject, Contact
 from django.core.mail import EmailMessage, get_connection
 from django.conf import settings
+from django.views.generic import FormView, TemplateView
+from .forms import ContactForm
+from django.urls import reverse_lazy
 
 def Menu(request):
     personal_projects = FeaturedProject.objects.all()
@@ -14,20 +17,13 @@ def Menu(request):
     }
     return render(request, '.base/index.html', context)
 
-def send_mail(request):
-    if request.method == "POST":
-       with get_connection(
-           host=settings.EMAIL_HOST,
-            port=settings.EMAIL_PORT,
-            username=settings.EMAIL_HOST_USER,
-            password=settings.EMAIL_HOST_PASSWORD,
-            use_tls=settings.EMAIL_USE_TLS
-       ) as connection:
-           subject = 'New Contact Submission'
-           email_from = settings.EMAIL_HOST_USER
-           recipient_list = [request.POST.get("email")]
-           message = f'You have a new contact submission from: {request.POST.get("email")}'
-           EmailMessage(subject, message, email_from, recipient_list, connection=connection).send()
-           return HttpResponseRedirect('.base/index.html')
-    else:
-           return render(request, '.base/index.html')
+class ContactView(FormView):
+    template_name = '.base/index.html'
+    form_class = ContactForm
+    success_url = reverse_lazy('contact:success')
+
+    def form_valid(self, form):
+        # Calls the custom send method
+        form.send()
+        return super().form_valid(form)
+
